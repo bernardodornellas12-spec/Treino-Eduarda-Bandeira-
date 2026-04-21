@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
@@ -19,206 +20,220 @@ html{background:#0b0b0b !important;color-scheme:dark;}
 body{background:#0b0b0b !important;color:var(--text);font-family:'DM Sans',sans-serif;font-size:14px;line-height:1.6;min-height:100vh;}
 
 /* ── NAV ── */
-.global-nav{position:sticky;top:0;z-index:300;background:var(--surface);border-bottom:1px solid var(--border);display:flex;align-items:center;}
-.nav-logo{font-family:'Bebas Neue',sans-serif;font-size:17px;letter-spacing:.1em;color:var(--accent);padding:0 20px;border-right:1px solid var(--border);height:48px;display:flex;align-items:center;white-space:nowrap;}
+.global-nav{position:sticky;top:0;z-index:300;background:var(–surface);border-bottom:1px solid var(–border);display:flex;align-items:center;}
+.nav-logo{font-family:‘Bebas Neue’,sans-serif;font-size:17px;letter-spacing:.1em;color:var(–accent);padding:0 20px;border-right:1px solid var(–border);height:48px;display:flex;align-items:center;white-space:nowrap;}
 .nav-tabs{display:flex;overflow-x:auto;scrollbar-width:none;}
 .nav-tabs::-webkit-scrollbar{display:none;}
-.nav-tab{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;padding:0 20px;height:48px;border:none;background:transparent;color:var(--muted2);cursor:pointer;border-bottom:2px solid transparent;transition:all .2s;white-space:nowrap;}
-.nav-tab.active{color:var(--accent);border-bottom-color:var(--accent);}
-.nav-tab:hover:not(.active){color:var(--text);}
+.nav-tab{font-family:‘DM Mono’,monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;padding:0 20px;height:48px;border:none;background:transparent;color:var(–muted2);cursor:pointer;border-bottom:2px solid transparent;transition:all .2s;white-space:nowrap;}
+.nav-tab.active{color:var(–accent);border-bottom-color:var(–accent);}
+.nav-tab:hover:not(.active){color:var(–text);}
 
 .page{display:none;}
 .page.active{display:block;}
 
 /* ── HERO ── */
-.hero{background:var(--surface);border-bottom:1px solid var(--border);padding:36px 28px 26px;position:relative;overflow:hidden;}
-.hero::before{content:'';position:absolute;top:-120px;right:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(249,168,212,.06) 0%,transparent 65%);pointer-events:none;}
-.hero::after{content:'';position:absolute;bottom:-60px;left:40%;width:300px;height:300px;background:radial-gradient(circle,rgba(244,114,182,.04) 0%,transparent 65%);pointer-events:none;}
-.hero-label{font-family:'DM Mono',monospace;font-size:10px;color:var(--accent2);letter-spacing:.22em;text-transform:uppercase;margin-bottom:10px;}
-.hero-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(48px,10vw,82px);line-height:.9;letter-spacing:.02em;}
-.hero-title span{color:var(--accent);}
-.hero-sub{margin-top:14px;color:var(--muted2);font-size:12px;display:flex;gap:24px;flex-wrap:wrap;}
-.hero-sub b{color:var(--text);}
+.hero{background:var(–surface);border-bottom:1px solid var(–border);padding:36px 28px 26px;position:relative;overflow:hidden;}
+.hero::before{content:’’;position:absolute;top:-120px;right:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(249,168,212,.06) 0%,transparent 65%);pointer-events:none;}
+.hero::after{content:’’;position:absolute;bottom:-60px;left:40%;width:300px;height:300px;background:radial-gradient(circle,rgba(244,114,182,.04) 0%,transparent 65%);pointer-events:none;}
+.hero-label{font-family:‘DM Mono’,monospace;font-size:10px;color:var(–accent2);letter-spacing:.22em;text-transform:uppercase;margin-bottom:10px;}
+.hero-title{font-family:‘Bebas Neue’,sans-serif;font-size:clamp(48px,10vw,82px);line-height:.9;letter-spacing:.02em;}
+.hero-title span{color:var(–accent);}
+.hero-sub{margin-top:14px;color:var(–muted2);font-size:12px;display:flex;gap:24px;flex-wrap:wrap;}
+.hero-sub b{color:var(–text);}
 
 /* ── STATS STRIP ── */
-.stats-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));border-bottom:1px solid var(--border);}
-.stat-cell{padding:18px 20px;border-right:1px solid var(--border);text-align:center;}
+.stats-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));border-bottom:1px solid var(–border);}
+.stat-cell{padding:18px 20px;border-right:1px solid var(–border);text-align:center;}
 .stat-cell:last-child{border-right:none;}
-.stat-num{font-family:'Bebas Neue',sans-serif;font-size:28px;color:var(--accent);line-height:1;}
-.stat-label{font-family:'DM Mono',monospace;font-size:9px;color:var(--muted2);letter-spacing:.12em;text-transform:uppercase;margin-top:4px;}
+.stat-num{font-family:‘Bebas Neue’,sans-serif;font-size:28px;color:var(–accent);line-height:1;}
+.stat-label{font-family:‘DM Mono’,monospace;font-size:9px;color:var(–muted2);letter-spacing:.12em;text-transform:uppercase;margin-top:4px;}
 
 /* ── WEEK SELECTOR ── */
-.week-bar{display:flex;gap:8px;padding:20px 24px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(--border);background:var(--surface);}
+.week-bar{display:flex;gap:8px;padding:20px 24px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid var(–border);background:var(–surface);}
 .week-bar::-webkit-scrollbar{display:none;}
-.week-btn{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;padding:6px 14px;border:1px solid var(--border2);background:transparent;color:var(--muted2);border-radius:4px;cursor:pointer;transition:all .15s;white-space:nowrap;}
-.week-btn.active{background:var(--accent-dim);border-color:var(--accent);color:var(--accent);}
-.week-btn:hover:not(.active){color:var(--text);border-color:var(--muted2);}
+.week-btn{font-family:‘DM Mono’,monospace;font-size:10px;letter-spacing:.1em;padding:6px 14px;border:1px solid var(–border2);background:transparent;color:var(–muted2);border-radius:4px;cursor:pointer;transition:all .15s;white-space:nowrap;}
+.week-btn.active{background:var(–accent-dim);border-color:var(–accent);color:var(–accent);}
+.week-btn:hover:not(.active){color:var(–text);border-color:var(–muted2);}
 
 /* ── DAY TABS ── */
-.day-nav{display:flex;gap:0;border-bottom:1px solid var(--border);overflow-x:auto;scrollbar-width:none;background:var(--surface2);}
+.day-nav{display:flex;gap:0;border-bottom:1px solid var(–border);overflow-x:auto;scrollbar-width:none;background:var(–surface2);}
 .day-nav::-webkit-scrollbar{display:none;}
-.day-btn{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:12px 18px;border:none;background:transparent;color:var(--muted2);cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;white-space:nowrap;}
-.day-btn.active{color:var(--accent);border-bottom-color:var(--accent);background:var(--accent-dim);}
-.day-btn:hover:not(.active){color:var(--text);}
+.day-btn{font-family:‘DM Mono’,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:12px 18px;border:none;background:transparent;color:var(–muted2);cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;white-space:nowrap;}
+.day-btn.active{color:var(–accent);border-bottom-color:var(–accent);background:var(–accent-dim);}
+.day-btn:hover:not(.active){color:var(–text);}
 
 /* ── WORKOUT CONTENT ── */
 .workout-content{padding:24px;}
 .day-header{margin-bottom:20px;}
-.day-name{font-family:'Bebas Neue',sans-serif;font-size:32px;color:var(--accent);line-height:1;}
-.day-focus{font-size:12px;color:var(--muted2);margin-top:2px;font-style:italic;}
-.day-notes{background:var(--surface2);border:1px solid var(--border);border-left:3px solid var(--accent2);padding:12px 16px;border-radius:4px;font-size:12px;color:var(--muted2);margin-bottom:20px;line-height:1.7;}
-.day-notes b{color:var(--text);}
+.day-name{font-family:‘Bebas Neue’,sans-serif;font-size:32px;color:var(–accent);line-height:1;}
+.day-focus{font-size:12px;color:var(–muted2);margin-top:2px;font-style:italic;}
+.day-notes{background:var(–surface2);border:1px solid var(–border);border-left:3px solid var(–accent2);padding:12px 16px;border-radius:4px;font-size:12px;color:var(–muted2);margin-bottom:20px;line-height:1.7;}
+.day-notes b{color:var(–text);}
 
 /* ── EXERCISE CARD ── */
-.ex-card{background:var(--surface);border:1px solid var(--border);border-radius:6px;margin-bottom:12px;overflow:hidden;}
+.ex-card{background:var(–surface);border:1px solid var(–border);border-radius:6px;margin-bottom:12px;overflow:hidden;}
 .ex-header{display:grid;grid-template-columns:1fr auto;align-items:start;padding:14px 16px;gap:12px;cursor:pointer;}
-.ex-header:hover{background:var(--surface2);}
-.ex-name{font-size:14px;font-weight:600;color:var(--text);}
-.ex-meta{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted2);margin-top:4px;letter-spacing:.06em;}
-.ex-meta span{color:var(--accent2);}
+.ex-header:hover{background:var(–surface2);}
+.ex-name{font-size:14px;font-weight:600;color:var(–text);}
+.ex-meta{font-family:‘DM Mono’,monospace;font-size:10px;color:var(–muted2);margin-top:4px;letter-spacing:.06em;}
+.ex-meta span{color:var(–accent2);}
 .ex-actions{display:flex;align-items:center;gap:8px;}
-.tech-badge{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border-radius:3px;border:1px solid;}
-.tech-badge.drop{background:rgba(248,113,113,.1);border-color:var(--red);color:var(--red);}
-.tech-badge.rp{background:rgba(125,211,252,.1);border-color:var(--blue);color:var(--blue);}
-.tech-badge.stop{background:rgba(134,239,172,.1);border-color:var(--green);color:var(--green);}
-.tech-badge.giant{background:rgba(192,132,252,.1);border-color:var(--purple);color:var(--purple);}
-.ex-expand{font-size:16px;color:var(--muted);transition:transform .2s;}
+.tech-badge{font-family:‘DM Mono’,monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:3px 8px;border-radius:3px;border:1px solid;}
+.tech-badge.drop{background:rgba(248,113,113,.1);border-color:var(–red);color:var(–red);}
+.tech-badge.rp{background:rgba(125,211,252,.1);border-color:var(–blue);color:var(–blue);}
+.tech-badge.stop{background:rgba(134,239,172,.1);border-color:var(–green);color:var(–green);}
+.tech-badge.giant{background:rgba(192,132,252,.1);border-color:var(–purple);color:var(–purple);}
+.ex-expand{font-size:16px;color:var(–muted);transition:transform .2s;}
 .ex-card.open .ex-expand{transform:rotate(180deg);}
 
 .ex-sets{padding:0 16px 14px;display:none;}
 .ex-card.open .ex-sets{display:block;}
-.sets-table{width:100%;border-collapse:collapse;font-family:'DM Mono',monospace;font-size:12px;}
-.sets-table th{text-align:left;color:var(--muted2);font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:6px 8px;border-bottom:1px solid var(--border);}
-.sets-table td{padding:8px 8px;border-bottom:1px solid var(--border);vertical-align:middle;}
+.sets-table{width:100%;border-collapse:collapse;font-family:‘DM Mono’,monospace;font-size:12px;}
+.sets-table th{text-align:left;color:var(–muted2);font-size:9px;letter-spacing:.12em;text-transform:uppercase;padding:6px 8px;border-bottom:1px solid var(–border);}
+.sets-table td{padding:8px 8px;border-bottom:1px solid var(–border);vertical-align:middle;}
 .sets-table tr:last-child td{border-bottom:none;}
-.sets-table input[type=number]{background:var(--surface2);border:1px solid var(--border2);color:var(--text);font-family:'DM Mono',monospace;font-size:12px;padding:4px 8px;border-radius:3px;width:70px;text-align:center;}
-.sets-table input[type=number]:focus{outline:none;border-color:var(--accent);color:var(--accent);}
-.set-num{color:var(--muted2);font-size:10px;}
+.sets-table input[type=number]{background:var(–surface2);border:1px solid var(–border2);color:var(–text);font-family:‘DM Mono’,monospace;font-size:12px;padding:4px 8px;border-radius:3px;width:70px;text-align:center;}
+.sets-table input[type=number]:focus{outline:none;border-color:var(–accent);color:var(–accent);}
+.set-num{color:var(–muted2);font-size:10px;}
 .set-type{font-size:9px;letter-spacing:.08em;text-transform:uppercase;}
-.set-type.warm{color:var(--orange);}
-.set-type.work{color:var(--accent);}
-.set-type.dropset{color:var(--red);}
-.pr-badge{font-family:'DM Mono',monospace;font-size:9px;background:rgba(249,168,212,.12);color:var(--accent);border:1px solid rgba(249,168,212,.3);padding:2px 6px;border-radius:3px;margin-left:6px;}
+.set-type.warm{color:var(–orange);}
+.set-type.work{color:var(–accent);}
+.set-type.dropset{color:var(–red);}
+.pr-badge{font-family:‘DM Mono’,monospace;font-size:9px;background:rgba(249,168,212,.12);color:var(–accent);border:1px solid rgba(249,168,212,.3);padding:2px 6px;border-radius:3px;margin-left:6px;}
 
 .tech-box{margin-top:12px;padding:12px 14px;border-radius:4px;font-size:12px;line-height:1.7;}
 .tech-box.drop{background:rgba(248,113,113,.06);border:1px solid rgba(248,113,113,.2);}
 .tech-box.rp{background:rgba(125,211,252,.06);border:1px solid rgba(125,211,252,.2);}
 .tech-box.stop{background:rgba(134,239,172,.06);border:1px solid rgba(134,239,172,.2);}
 .tech-box.giant{background:rgba(192,132,252,.06);border:1px solid rgba(192,132,252,.2);}
-.tech-box-title{font-size:10px;font-family:'DM Mono',monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--muted2);margin-bottom:6px;}
+.tech-box-title{font-size:10px;font-family:‘DM Mono’,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(–muted2);margin-bottom:6px;}
 
 /* ── SAVE BAR ── */
-.save-bar{position:fixed;bottom:0;left:0;right:0;background:var(--surface);border-top:1px solid var(--border);padding:12px 24px;display:flex;justify-content:space-between;align-items:center;z-index:100;}
-.save-bar-left{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted2);}
+.save-bar{position:fixed;bottom:0;left:0;right:0;background:var(–surface);border-top:1px solid var(–border);padding:12px 24px;display:flex;justify-content:space-between;align-items:center;z-index:100;}
+.save-bar-left{font-family:‘DM Mono’,monospace;font-size:10px;color:var(–muted2);}
 .save-bar-right{display:flex;gap:10px;}
-.btn-save{background:var(--accent);color:#000;font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:9px 20px;border:none;border-radius:4px;cursor:pointer;font-weight:600;transition:opacity .15s;}
+.btn-save{background:var(–accent);color:#000;font-family:‘DM Mono’,monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:9px 20px;border:none;border-radius:4px;cursor:pointer;font-weight:600;transition:opacity .15s;}
 .btn-save:hover{opacity:.85;}
-.btn-clear{background:transparent;color:var(--muted2);font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:9px 16px;border:1px solid var(--border2);border-radius:4px;cursor:pointer;transition:all .15s;}
-.btn-clear:hover{color:var(--text);}
+.btn-clear{background:transparent;color:var(–muted2);font-family:‘DM Mono’,monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:9px 16px;border:1px solid var(–border2);border-radius:4px;cursor:pointer;transition:all .15s;}
+.btn-clear:hover{color:var(–text);}
 .workout-content{padding-bottom:80px;}
 
 /* ── DIET ── */
 .diet-content{padding:24px;padding-bottom:80px;}
-.macro-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));border-bottom:1px solid var(--border);background:var(--surface);}
-.macro-cell{padding:18px 16px;border-right:1px solid var(--border);text-align:center;}
+.macro-strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(100px,1fr));border-bottom:1px solid var(–border);background:var(–surface);}
+.macro-cell{padding:18px 16px;border-right:1px solid var(–border);text-align:center;}
 .macro-cell:last-child{border-right:none;}
-.macro-num{font-family:'Bebas Neue',sans-serif;font-size:26px;line-height:1;}
-.macro-num.kcal{color:var(--accent);}
-.macro-num.prot{color:var(--blue);}
-.macro-num.carb{color:var(--orange);}
-.macro-num.fat{color:var(--purple);}
-.macro-label{font-family:'DM Mono',monospace;font-size:9px;color:var(--muted2);letter-spacing:.1em;text-transform:uppercase;margin-top:3px;}
+.macro-num{font-family:‘Bebas Neue’,sans-serif;font-size:26px;line-height:1;}
+.macro-num.kcal{color:var(–accent);}
+.macro-num.prot{color:var(–blue);}
+.macro-num.carb{color:var(–orange);}
+.macro-num.fat{color:var(–purple);}
+.macro-label{font-family:‘DM Mono’,monospace;font-size:9px;color:var(–muted2);letter-spacing:.1em;text-transform:uppercase;margin-top:3px;}
 
-.meal-card{background:var(--surface);border:1px solid var(--border);border-radius:6px;margin-bottom:12px;overflow:hidden;}
+.meal-card{background:var(–surface);border:1px solid var(–border);border-radius:6px;margin-bottom:12px;overflow:hidden;}
 .meal-header{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;cursor:pointer;border-bottom:1px solid transparent;}
-.meal-card.open .meal-header{border-bottom-color:var(--border);}
-.meal-header:hover{background:var(--surface2);}
+.meal-card.open .meal-header{border-bottom-color:var(–border);}
+.meal-header:hover{background:var(–surface2);}
 .meal-title-wrap{display:flex;align-items:center;gap:12px;}
 .meal-icon{font-size:20px;}
 .meal-title{font-size:14px;font-weight:600;}
-.meal-time{font-family:'DM Mono',monospace;font-size:10px;color:var(--accent2);margin-top:2px;letter-spacing:.08em;}
-.meal-kcal{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted2);}
-.meal-expand{font-size:16px;color:var(--muted);transition:transform .2s;}
+.meal-time{font-family:‘DM Mono’,monospace;font-size:10px;color:var(–accent2);margin-top:2px;letter-spacing:.08em;}
+.meal-kcal{font-family:‘DM Mono’,monospace;font-size:11px;color:var(–muted2);}
+.meal-expand{font-size:16px;color:var(–muted);transition:transform .2s;}
 .meal-card.open .meal-expand{transform:rotate(180deg);}
 
 .meal-items{display:none;padding:0 16px 14px;}
 .meal-card.open .meal-items{display:block;}
-.food-row{display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);gap:12px;}
+.food-row{display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(–border);gap:12px;}
 .food-row:last-child{border-bottom:none;}
 .food-name{font-size:13px;flex:1;}
-.food-qty{font-family:'DM Mono',monospace;font-size:11px;color:var(--accent2);}
-.food-macros{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted2);text-align:right;}
+.food-qty{font-family:‘DM Mono’,monospace;font-size:11px;color:var(–accent2);}
+.food-macros{font-family:‘DM Mono’,monospace;font-size:10px;color:var(–muted2);text-align:right;}
 
-.food-swap-btn{background:transparent;border:1px solid var(--border2);color:var(--muted2);font-size:10px;padding:3px 8px;border-radius:3px;cursor:pointer;font-family:'DM Mono',monospace;letter-spacing:.08em;transition:all .15s;white-space:nowrap;}
-.food-swap-btn:hover{color:var(--accent);border-color:var(--accent);}
+.food-swap-btn{background:transparent;border:1px solid var(–border2);color:var(–muted2);font-size:10px;padding:3px 8px;border-radius:3px;cursor:pointer;font-family:‘DM Mono’,monospace;letter-spacing:.08em;transition:all .15s;white-space:nowrap;}
+.food-swap-btn:hover{color:var(–accent);border-color:var(–accent);}
 
-.meal-obs{margin-top:10px;font-size:11px;color:var(--muted2);font-style:italic;padding:8px 12px;background:var(--surface2);border-radius:4px;border-left:2px solid var(--border2);}
+.meal-obs{margin-top:10px;font-size:11px;color:var(–muted2);font-style:italic;padding:8px 12px;background:var(–surface2);border-radius:4px;border-left:2px solid var(–border2);}
 
 /* ── TIPS PAGE ── */
 .tips-content{padding:24px;padding-bottom:40px;}
 .tips-section{margin-bottom:32px;}
-.tips-section-title{font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--accent);margin-bottom:12px;}
-.tip-card{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:16px 18px;margin-bottom:10px;}
-.tip-card-title{font-size:13px;font-weight:600;color:var(--text);margin-bottom:6px;display:flex;align-items:center;gap:8px;}
+.tips-section-title{font-family:‘Bebas Neue’,sans-serif;font-size:22px;color:var(–accent);margin-bottom:12px;}
+.tip-card{background:var(–surface);border:1px solid var(–border);border-radius:6px;padding:16px 18px;margin-bottom:10px;}
+.tip-card-title{font-size:13px;font-weight:600;color:var(–text);margin-bottom:6px;display:flex;align-items:center;gap:8px;}
 .tip-card-title .ic{font-size:16px;}
-.tip-card p{font-size:12px;color:var(--muted2);line-height:1.7;}
-.tip-card p b{color:var(--text);}
+.tip-card p{font-size:12px;color:var(–muted2);line-height:1.7;}
+.tip-card p b{color:var(–text);}
 
 /* ── MODAL ── */
 .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:500;display:none;align-items:center;justify-content:center;padding:24px;}
 .modal-overlay.show{display:flex;}
-.modal{background:var(--surface);border:1px solid var(--border2);border-radius:8px;width:100%;max-width:440px;max-height:85vh;overflow-y:auto;}
-.modal-header{padding:16px 20px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;}
+.modal{background:var(–surface);border:1px solid var(–border2);border-radius:8px;width:100%;max-width:440px;max-height:85vh;overflow-y:auto;}
+.modal-header{padding:16px 20px;border-bottom:1px solid var(–border);display:flex;justify-content:space-between;align-items:center;}
 .modal-title{font-size:14px;font-weight:600;}
-.modal-close{background:transparent;border:none;color:var(--muted2);font-size:20px;cursor:pointer;padding:4px;}
-.modal-close:hover{color:var(--text);}
+.modal-close{background:transparent;border:none;color:var(–muted2);font-size:20px;cursor:pointer;padding:4px;}
+.modal-close:hover{color:var(–text);}
 .modal-body{padding:16px 20px;}
-.swap-group-title{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted2);margin:14px 0 8px;border-bottom:1px solid var(--border);padding-bottom:6px;}
-.swap-opt{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(--border);}
+.swap-group-title{font-family:‘DM Mono’,monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(–muted2);margin:14px 0 8px;border-bottom:1px solid var(–border);padding-bottom:6px;}
+.swap-opt{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px solid var(–border);}
 .swap-opt:last-child{border-bottom:none;}
 .swap-opt-name{font-size:13px;}
-.swap-opt-macros{font-family:'DM Mono',monospace;font-size:10px;color:var(--muted2);}
-.swap-opt-btn{background:var(--accent-dim);border:1px solid rgba(249,168,212,.3);color:var(--accent);font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:3px;cursor:pointer;transition:all .15s;}
-.swap-opt-btn:hover{background:var(--accent);color:#000;}
-.swap-opt-btn.warn{background:rgba(248,113,113,.1);border-color:rgba(248,113,113,.3);color:var(--red);}
+.swap-opt-macros{font-family:‘DM Mono’,monospace;font-size:10px;color:var(–muted2);}
+.swap-opt-btn{background:var(–accent-dim);border:1px solid rgba(249,168,212,.3);color:var(–accent);font-family:‘DM Mono’,monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:3px;cursor:pointer;transition:all .15s;}
+.swap-opt-btn:hover{background:var(–accent);color:#000;}
+.swap-opt-btn.warn{background:rgba(248,113,113,.1);border-color:rgba(248,113,113,.3);color:var(–red);}
 .swap-opt-btn.warn:hover{background:rgba(248,113,113,.25);}
 
+/* ── IMAGE DEMO ── */
+.demo-wrap{margin-bottom:14px;}
+.demo-btns{display:flex;gap:8px;flex-wrap:wrap;align-items:center;}
+.demo-toggle-btn{background:transparent;border:1px solid var(–border2);color:var(–muted2);font-family:‘DM Mono’,monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border-radius:3px;cursor:pointer;transition:all .15s;white-space:nowrap;}
+.demo-toggle-btn:hover{color:var(–blue);border-color:var(–blue);}
+.demo-toggle-btn.open{color:var(–blue);border-color:rgba(125,211,252,.4);background:rgba(125,211,252,.06);}
+.yt-btn{display:inline-flex;align-items:center;gap:5px;background:rgba(255,70,70,.08);border:1px solid rgba(255,70,70,.25);color:#ff6b6b;font-family:‘DM Mono’,monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border-radius:3px;cursor:pointer;text-decoration:none;transition:all .15s;white-space:nowrap;}
+.yt-btn:hover{background:rgba(255,70,70,.18);border-color:rgba(255,70,70,.5);}
+.demo-imgs{margin-top:10px;border-radius:6px;overflow:hidden;background:var(–surface2);border:1px solid var(–border);}
+.demo-label{font-family:‘DM Mono’,monospace;font-size:9px;color:var(–muted2);padding:7px 12px;letter-spacing:.1em;text-transform:uppercase;border-bottom:1px solid var(–border);}
+.demo-row{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(–border);}
+.demo-row img{width:100%;height:160px;object-fit:cover;object-position:top;display:block;background:var(–surface3);}
+
 /* ── EX SWAP BUTTON ── */
-.ex-swap-btn{background:transparent;border:1px solid var(--border2);color:var(--muted2);font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:3px;cursor:pointer;transition:all .15s;white-space:nowrap;}
-.ex-swap-btn:hover{color:var(--accent);border-color:var(--accent);}
-.ex-swap-btn.swapped{background:rgba(249,168,212,.1);border-color:rgba(249,168,212,.4);color:var(--accent);}
-.swap-ex-opt{padding:12px 0;border-bottom:1px solid var(--border);}
+.ex-swap-btn{background:transparent;border:1px solid var(–border2);color:var(–muted2);font-family:‘DM Mono’,monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:3px;cursor:pointer;transition:all .15s;white-space:nowrap;}
+.ex-swap-btn:hover{color:var(–accent);border-color:var(–accent);}
+.ex-swap-btn.swapped{background:rgba(249,168,212,.1);border-color:rgba(249,168,212,.4);color:var(–accent);}
+.swap-ex-opt{padding:12px 0;border-bottom:1px solid var(–border);}
 .swap-ex-opt:last-child{border-bottom:none;}
 .swap-ex-top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;}
 .swap-ex-name{font-size:13px;font-weight:500;}
-.swap-ex-muscle{font-family:'DM Mono',monospace;font-size:9px;color:var(--muted2);margin-top:3px;}
-.swap-ex-why{font-size:11px;color:var(--muted2);margin-top:6px;line-height:1.6;font-style:italic;}
-.swap-ex-btn{background:var(--accent-dim);border:1px solid rgba(249,168,212,.3);color:var(--accent);font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border-radius:3px;cursor:pointer;transition:all .15s;white-space:nowrap;flex-shrink:0;}
-.swap-ex-btn:hover{background:var(--accent);color:#000;}
-.swap-ex-btn.restore{background:rgba(134,239,172,.08);border-color:rgba(134,239,172,.3);color:var(--green);}
+.swap-ex-muscle{font-family:‘DM Mono’,monospace;font-size:9px;color:var(–muted2);margin-top:3px;}
+.swap-ex-why{font-size:11px;color:var(–muted2);margin-top:6px;line-height:1.6;font-style:italic;}
+.swap-ex-btn{background:var(–accent-dim);border:1px solid rgba(249,168,212,.3);color:var(–accent);font-family:‘DM Mono’,monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border-radius:3px;cursor:pointer;transition:all .15s;white-space:nowrap;flex-shrink:0;}
+.swap-ex-btn:hover{background:var(–accent);color:#000;}
+.swap-ex-btn.restore{background:rgba(134,239,172,.08);border-color:rgba(134,239,172,.3);color:var(–green);}
 
 /* ── OBS BOX ── */
-.obs-box{margin:16px 24px;padding:14px 16px;background:var(--surface);border:1px solid var(--border);border-radius:6px;}
-.obs-box-title{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted2);margin-bottom:8px;display:flex;align-items:center;gap:6px;}
-.obs-textarea{width:100%;background:var(--surface2);border:1px solid var(--border2);color:var(--text);font-family:'DM Sans',sans-serif;font-size:13px;line-height:1.6;padding:10px 12px;border-radius:4px;resize:vertical;min-height:80px;}
-.obs-textarea::placeholder{color:var(--muted);}
-.obs-textarea:focus{outline:none;border-color:var(--accent);}
-.obs-save-btn{margin-top:8px;background:var(--accent-dim);border:1px solid rgba(249,168,212,.3);color:var(--accent);font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:7px 16px;border-radius:4px;cursor:pointer;transition:all .15s;}
-.obs-save-btn:hover{background:var(--accent);color:#000;}
+.obs-box{margin:16px 24px;padding:14px 16px;background:var(–surface);border:1px solid var(–border);border-radius:6px;}
+.obs-box-title{font-family:‘DM Mono’,monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(–muted2);margin-bottom:8px;display:flex;align-items:center;gap:6px;}
+.obs-textarea{width:100%;background:var(–surface2);border:1px solid var(–border2);color:var(–text);font-family:‘DM Sans’,sans-serif;font-size:13px;line-height:1.6;padding:10px 12px;border-radius:4px;resize:vertical;min-height:80px;}
+.obs-textarea::placeholder{color:var(–muted);}
+.obs-textarea:focus{outline:none;border-color:var(–accent);}
+.obs-save-btn{margin-top:8px;background:var(–accent-dim);border:1px solid rgba(249,168,212,.3);color:var(–accent);font-family:‘DM Mono’,monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;padding:7px 16px;border-radius:4px;cursor:pointer;transition:all .15s;}
+.obs-save-btn:hover{background:var(–accent);color:#000;}
 
 /* ── TOAST ── */
-.toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--surface2);border:1px solid var(--border2);color:var(--text);font-family:'DM Mono',monospace;font-size:11px;padding:10px 20px;border-radius:5px;opacity:0;transition:all .25s;z-index:600;white-space:nowrap;}
+.toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);background:var(–surface2);border:1px solid var(–border2);color:var(–text);font-family:‘DM Mono’,monospace;font-size:11px;padding:10px 20px;border-radius:5px;opacity:0;transition:all .25s;z-index:600;white-space:nowrap;}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0);}
-.toast.warn{border-color:rgba(248,113,113,.4);color:var(--red);}
+.toast.warn{border-color:rgba(248,113,113,.4);color:var(–red);}
 
 /* ── RESPONSIVE ── */
 @media(max-width:480px){
-  .stats-strip{grid-template-columns:repeat(2,1fr);}
-  .macro-strip{grid-template-columns:repeat(2,1fr);}
-  .hero-title{font-size:clamp(40px,13vw,82px);}
-  .sets-table input[type=number]{width:55px;}
+.stats-strip{grid-template-columns:repeat(2,1fr);}
+.macro-strip{grid-template-columns:repeat(2,1fr);}
+.hero-title{font-size:clamp(40px,13vw,82px);}
+.sets-table input[type=number]{width:55px;}
 }
 </style>
+
 </head>
 <body>
 
@@ -232,6 +247,7 @@ body{background:#0b0b0b !important;color:var(--text);font-family:'DM Sans',sans-
 </nav>
 
 <!-- ══════════════ PAGE: TREINO ══════════════ -->
+
 <div id="page-treino" class="page active">
 
   <div class="hero">
@@ -252,12 +268,15 @@ body{background:#0b0b0b !important;color:var(--text);font-family:'DM Sans',sans-
   </div>
 
   <!-- Week Bar -->
+
   <div class="week-bar" id="weekBar"></div>
 
   <!-- Day Nav -->
+
   <div class="day-nav" id="dayNav"></div>
 
   <!-- Content -->
+
   <div class="workout-content" id="workoutContent"></div>
 
   <div class="save-bar" id="saveBar">
@@ -270,6 +289,7 @@ body{background:#0b0b0b !important;color:var(--text);font-family:'DM Sans',sans-
 </div>
 
 <!-- ══════════════ PAGE: DIETA ══════════════ -->
+
 <div id="page-dieta" class="page">
 
   <div class="hero">
@@ -292,6 +312,7 @@ body{background:#0b0b0b !important;color:var(--text);font-family:'DM Sans',sans-
 </div>
 
 <!-- ══════════════ PAGE: DICAS ══════════════ -->
+
 <div id="page-dicas" class="page">
   <div class="hero">
     <div class="hero-label">Bem-estar integral</div>
@@ -299,66 +320,69 @@ body{background:#0b0b0b !important;color:var(--text);font-family:'DM Sans',sans-
   </div>
   <div class="tips-content">
 
-    <div class="tips-section">
-      <div class="tips-section-title">TREINO</div>
-      <div class="tip-card">
-        <div class="tip-card-title"><span class="ic">📌</span> Progressão de carga suave</div>
-        <p>Com experiência elevada, o ganho de força não precisa ser linear. <b>Priorize a qualidade de movimento</b> e aumente cargas de 2,5% em 2,5%. Não há pressa quando o objetivo é saúde.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-card-title"><span class="ic">🌬️</span> Respiração consciente</div>
-        <p>Expire no esforço, inspire no retorno. <b>Nunca prenda a respiração</b> durante o movimento — especialmente em agachamentos e desenvolvimentos. Isso regula a pressão arterial e melhora o controle.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-card-title"><span class="ic">🧘</span> Tensão-tempo importa</div>
-        <p>Para saúde articular e muscular, priorize <b>tempo sob tensão de 3–4 segundos na fase excêntrica</b> (descida). Isso protege tendões e gera estímulo eficiente sem cargas extremas.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-card-title"><span class="ic">💤</span> Descanso entre séries</div>
-        <p>Para exercícios compostos (agachamento, supino, terra): <b>2–3 min</b>. Para isolados (rosca, extensão): <b>60–90 seg</b>. Dormir bem é tão importante quanto o treino.</p>
-      </div>
-    </div>
+```
+<div class="tips-section">
+  <div class="tips-section-title">TREINO</div>
+  <div class="tip-card">
+    <div class="tip-card-title"><span class="ic">📌</span> Progressão de carga suave</div>
+    <p>Com experiência elevada, o ganho de força não precisa ser linear. <b>Priorize a qualidade de movimento</b> e aumente cargas de 2,5% em 2,5%. Não há pressa quando o objetivo é saúde.</p>
+  </div>
+  <div class="tip-card">
+    <div class="tip-card-title"><span class="ic">🌬️</span> Respiração consciente</div>
+    <p>Expire no esforço, inspire no retorno. <b>Nunca prenda a respiração</b> durante o movimento — especialmente em agachamentos e desenvolvimentos. Isso regula a pressão arterial e melhora o controle.</p>
+  </div>
+  <div class="tip-card">
+    <div class="tip-card-title"><span class="ic">🧘</span> Tensão-tempo importa</div>
+    <p>Para saúde articular e muscular, priorize <b>tempo sob tensão de 3–4 segundos na fase excêntrica</b> (descida). Isso protege tendões e gera estímulo eficiente sem cargas extremas.</p>
+  </div>
+  <div class="tip-card">
+    <div class="tip-card-title"><span class="ic">💤</span> Descanso entre séries</div>
+    <p>Para exercícios compostos (agachamento, supino, terra): <b>2–3 min</b>. Para isolados (rosca, extensão): <b>60–90 seg</b>. Dormir bem é tão importante quanto o treino.</p>
+  </div>
+</div>
 
-    <div class="tips-section">
-      <div class="tips-section-title">ALIMENTAÇÃO & SAÚDE</div>
-      <div class="tip-card">
-        <div class="tip-card-title"><span class="ic">🥗</span> Peso atual e nutrição</div>
-        <p>Com 42 kg e 1,54 m (IMC 17,7), você está <b>abaixo do peso ideal</b> segundo OMS. A dieta foi montada para <b>manutenção com levíssimo superávit</b> — o objetivo é saúde, não emagrecer.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-card-title"><span class="ic">🫀</span> Não pule refeições</div>
-        <p>Com metabolismo acelerado comum em pessoas mais leves, <b>pular refeições causa catabolismo muscular</b>. Se não sentir fome, prefira refeições menores e mais frequentes em vez de menos refeições.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-card-title"><span class="ic">💧</span> Hidratação</div>
-        <p>Meta mínima: <b>2 litros/dia</b>. Nos dias de treino, acrescente 500 ml. Desidratação afeta performance cognitiva, disposição e recuperação muscular.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-card-title"><span class="ic">🍫</span> Ferro e cálcio — atenção especial</div>
-        <p>Mulheres em fase reprodutiva perdem ferro mensalmente. <b>Priorize carnes vermelhas 2–3x/semana</b>, leguminosas, folhas verdes escuras. Para cálcio: laticínios ou sardinha com espinho.</p>
-      </div>
-    </div>
+<div class="tips-section">
+  <div class="tips-section-title">ALIMENTAÇÃO & SAÚDE</div>
+  <div class="tip-card">
+    <div class="tip-card-title"><span class="ic">🥗</span> Peso atual e nutrição</div>
+    <p>Com 42 kg e 1,54 m (IMC 17,7), você está <b>abaixo do peso ideal</b> segundo OMS. A dieta foi montada para <b>manutenção com levíssimo superávit</b> — o objetivo é saúde, não emagrecer.</p>
+  </div>
+  <div class="tip-card">
+    <div class="tip-card-title"><span class="ic">🫀</span> Não pule refeições</div>
+    <p>Com metabolismo acelerado comum em pessoas mais leves, <b>pular refeições causa catabolismo muscular</b>. Se não sentir fome, prefira refeições menores e mais frequentes em vez de menos refeições.</p>
+  </div>
+  <div class="tip-card">
+    <div class="tip-card-title"><span class="ic">💧</span> Hidratação</div>
+    <p>Meta mínima: <b>2 litros/dia</b>. Nos dias de treino, acrescente 500 ml. Desidratação afeta performance cognitiva, disposição e recuperação muscular.</p>
+  </div>
+  <div class="tip-card">
+    <div class="tip-card-title"><span class="ic">🍫</span> Ferro e cálcio — atenção especial</div>
+    <p>Mulheres em fase reprodutiva perdem ferro mensalmente. <b>Priorize carnes vermelhas 2–3x/semana</b>, leguminosas, folhas verdes escuras. Para cálcio: laticínios ou sardinha com espinho.</p>
+  </div>
+</div>
 
-    <div class="tips-section">
-      <div class="tips-section-title">BEM-ESTAR MENTAL</div>
-      <div class="tip-card">
-        <div class="tip-card-title"><span class="ic">🧠</span> Corpo e mente conectados</div>
-        <p>Bem-estar real vem da integração. <b>Adicione 10 min de alongamento ao final do treino</b> — reduz cortisol, melhora flexibilidade e cria um ritual de encerramento que sinaliza ao sistema nervoso: "acabou".</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-card-title"><span class="ic">🌙</span> Sono de qualidade</div>
-        <p>O GH (hormônio de crescimento) é liberado predominantemente no sono profundo. <b>7–9 horas por noite</b> não é luxo — é parte do plano. Evite telas 30 min antes de dormir.</p>
-      </div>
-      <div class="tip-card">
-        <div class="tip-card-title"><span class="ic">📅</span> Dia de descanso ativo</div>
-        <p>Nos 2 dias sem treino: <b>caminhada leve, yoga, pilates ou natação</b>. Isso mantém o sistema cardiovascular ativo sem sobrecarregar o sistema nervoso. Movimento leve acelera a recuperação.</p>
-      </div>
-    </div>
+<div class="tips-section">
+  <div class="tips-section-title">BEM-ESTAR MENTAL</div>
+  <div class="tip-card">
+    <div class="tip-card-title"><span class="ic">🧠</span> Corpo e mente conectados</div>
+    <p>Bem-estar real vem da integração. <b>Adicione 10 min de alongamento ao final do treino</b> — reduz cortisol, melhora flexibilidade e cria um ritual de encerramento que sinaliza ao sistema nervoso: "acabou".</p>
+  </div>
+  <div class="tip-card">
+    <div class="tip-card-title"><span class="ic">🌙</span> Sono de qualidade</div>
+    <p>O GH (hormônio de crescimento) é liberado predominantemente no sono profundo. <b>7–9 horas por noite</b> não é luxo — é parte do plano. Evite telas 30 min antes de dormir.</p>
+  </div>
+  <div class="tip-card">
+    <div class="tip-card-title"><span class="ic">📅</span> Dia de descanso ativo</div>
+    <p>Nos 2 dias sem treino: <b>caminhada leve, yoga, pilates ou natação</b>. Isso mantém o sistema cardiovascular ativo sem sobrecarregar o sistema nervoso. Movimento leve acelera a recuperação.</p>
+  </div>
+</div>
+```
 
   </div>
 </div>
 
 <!-- MODAL SWAP -->
+
 <div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
   <div class="modal">
     <div class="modal-header">
@@ -377,33 +401,47 @@ body{background:#0b0b0b !important;color:var(--text);font-family:'DM Sans',sans-
 // ══════════════════════════════════════════════════════
 const TECH_LABELS = {drop:'Drop Set',rp:'Rest-Pause',stop:'Stop Set',giant:'Giant Set'};
 
+const BASE_IMG = 'https://cdn.jsdelivr.net/gh/yuhonas/free-exercise-db@main/exercises/';
+
 const DAYS = [
   {
     id:'A', name:'UPPER A', focus:'Peito · Costas · Ombros',
     notes:'<b>Aquecimento:</b> 3 min mobilidade de ombros + rotação escapular com elástico. Descanso máximo de 60 s entre séries para caber em 40 min.',
     exercises:[
-      {name:'Supino com Halteres',meta:'3×10–12 · 60 s',tech:{type:'stop',how:'Na última série: ao falhar, pause 8 seg respirando fundo e execute mais 3 repetições. Uma pausa por série.'},
+      {name:'Supino com Halteres',meta:'3×10–12 · 60 s',
+       img:['Dumbbell_Bench_Press/0.jpg','Dumbbell_Bench_Press/1.jpg'],
+       yt:'supino halteres execução correta',
+       tech:{type:'stop',how:'Na última série: ao falhar, pause 8 seg respirando fundo e execute mais 3 repetições. Uma pausa por série.'},
        sets:[{t:'aquec',reps:'15'},{t:'work',reps:'12'},{t:'work',reps:'10'},{t:'work',reps:'10'}],
        swaps:[
          {name:'Supino na Máquina',muscle:'Peitoral · Tríceps',why:'Ideal se os halteres estiverem ocupados ou para mais estabilidade. Mesmo ângulo, mesma carga relativa.'},
          {name:'Flexão de Braço (com carga)',muscle:'Peitoral · Ombro · Tríceps',why:'Use um colete com peso ou elástico nas costas. Boa opção sem equipamento disponível.'},
          {name:'Cross Over na Polia',muscle:'Peitoral (ênfase interna)',why:'Substituto de isolamento — use quando quiser poupar articulações do ombro com carga menor.'},
        ]},
-      {name:'Puxada Frontal (Pegada Fechada)',meta:'3×10–12 · 60 s',tech:null,
+      {name:'Puxada Frontal (Pegada Fechada)',meta:'3×10–12 · 60 s',
+       img:['Close-Grip_Front_Lat_Pulldown/0.jpg','Close-Grip_Front_Lat_Pulldown/1.jpg'],
+       yt:'puxada frontal pegada fechada execução',
+       tech:null,
        sets:[{t:'work',reps:'12'},{t:'work',reps:'10'},{t:'work',reps:'10'}],
        swaps:[
          {name:'Remada na Polia Baixa (sentada)',muscle:'Dorsal · Bíceps',why:'Ótima substituta se a puxada estiver ocupada. Trabalha o mesmo músculo em ângulo diferente.'},
          {name:'Puxada no Graviton',muscle:'Dorsal · Bíceps',why:'Use se a puxada livre for pesada demais — o graviton ajuda a regular a carga com precisão.'},
          {name:'Serrote com Halter',muscle:'Dorsal · Romboides',why:'Unilateral. Bom substituto quando quer mais amplitude de movimento e trabalho individual.'},
        ]},
-      {name:'Desenvolvimento com Halteres',meta:'3×12 · 60 s',tech:null,
+      {name:'Desenvolvimento com Halteres',meta:'3×12 · 60 s',
+       img:['Dumbbell_Shoulder_Press/0.jpg','Dumbbell_Shoulder_Press/1.jpg'],
+       yt:'desenvolvimento halteres ombro execução',
+       tech:null,
        sets:[{t:'work',reps:'12'},{t:'work',reps:'12'},{t:'work',reps:'12'}],
        swaps:[
          {name:'Desenvolvimento na Máquina',muscle:'Deltóide · Tríceps',why:'Estabilidade maior para ombros sensíveis. Equivalente direto — mesma carga, mesmo ritmo.'},
          {name:'Arnold Press',muscle:'Deltóide (todos os feixes)',why:'Variação com rotação — ativa mais o deltóide anterior e médio. Carga ligeiramente menor.'},
          {name:'Elevação Frontal + Lateral (superset)',muscle:'Deltóide anterior · médio',why:'Use se o desenvolvimento causar desconforto. Divide o trabalho em dois isolados leves.'},
        ]},
-      {name:'Elevação Lateral + Rosca Alternada (superset)',meta:'3×12+12 · 45 s',tech:{type:'giant',how:'Execute 12 elevações laterais e, sem descanso, 12 roscas alternadas. Descanse 45 s ao final do par. Isso economiza tempo e mantém intensidade.'},
+      {name:'Elevação Lateral + Rosca Alternada (superset)',meta:'3×12+12 · 45 s',
+       img:['Side_Lateral_Raise/0.jpg','Side_Lateral_Raise/1.jpg'],
+       yt:'elevação lateral halteres execução correta',
+       tech:{type:'giant',how:'Execute 12 elevações laterais e, sem descanso, 12 roscas alternadas. Descanse 45 s ao final do par. Isso economiza tempo e mantém intensidade.'},
        sets:[{t:'work',reps:'12+12'},{t:'work',reps:'12+12'},{t:'work',reps:'12+12'}],
        swaps:[
          {name:'Elevação Lateral na Polia + Rosca Scott',muscle:'Deltóide médio · Bíceps',why:'Versão na polia mantém tensão constante no ombro. Rosca Scott isola mais o bíceps.'},
@@ -415,28 +453,40 @@ const DAYS = [
     id:'B', name:'LOWER A', focus:'Glúteos · Quadríceps · Core',
     notes:'<b>Aquecimento:</b> Band lateral walk 2×15 passos + agachamento livre sem carga 2×12. Ative os glúteos antes de carregar peso.',
     exercises:[
-      {name:'Agachamento Livre',meta:'3×10 · 75 s',tech:{type:'stop',how:'No último set: desça até paralelo, pause 2 seg no fundo, suba com força. Na falha, pause em pé 10 seg e execute mais 2 reps.'},
+      {name:'Agachamento Livre',meta:'3×10 · 75 s',
+       img:['Barbell_Full_Squat/0.jpg','Barbell_Full_Squat/1.jpg'],
+       yt:'agachamento livre execução correta academia',
+       tech:{type:'stop',how:'No último set: desça até paralelo, pause 2 seg no fundo, suba com força. Na falha, pause em pé 10 seg e execute mais 2 reps.'},
        sets:[{t:'aquec',reps:'15'},{t:'work',reps:'10'},{t:'work',reps:'10'},{t:'work',reps:'10'}],
        swaps:[
          {name:'Leg Press 45°',muscle:'Quadríceps · Glúteos',why:'Substituto direto sem exigir equilíbrio de barra. Use se o agachamento causar dor lombar ou joelho.'},
          {name:'Agachamento Goblet (halter)',muscle:'Quadríceps · Core · Glúteos',why:'Versão mais segura — o halter na frente corrige postura naturalmente. Ótima para mobilidade.'},
          {name:'Hack Squat',muscle:'Quadríceps (ênfase)',why:'Máquina com amplitude controlada. Ideal quando quiser mais isolamento do quadríceps.'},
        ]},
-      {name:'Hip Thrust (elevação de quadril)',meta:'3×15 · 60 s',tech:null,
+      {name:'Hip Thrust (elevação de quadril)',meta:'3×15 · 60 s',
+       img:['Barbell_Hip_Thrust/0.jpg','Barbell_Hip_Thrust/1.jpg'],
+       yt:'hip thrust glúteo execução correta',
+       tech:null,
        sets:[{t:'work',reps:'15'},{t:'work',reps:'15'},{t:'work',reps:'15'}],
        swaps:[
          {name:'Elevação de Quadril no Chão (com halter)',muscle:'Glúteo máximo',why:'Versão sem banco — mesma ativação glútea, menor amplitude. Use se não tiver banco disponível.'},
          {name:'Glúteo na Polia (kickback)',muscle:'Glúteo máximo · médio',why:'Unilateral e de pé — ótimo substituto se o hip thrust causar desconforto lombar.'},
          {name:'Stiff com Barra (RDL)',muscle:'Glúteo · Isquiotibiais',why:'Muda o foco para a cadeia posterior como um todo. Use quando quiser mais trabalho de posterior de coxa.'},
        ]},
-      {name:'Avanço com Halteres (alternado)',meta:'3×10 cada lado · 60 s',tech:null,
+      {name:'Avanço com Halteres (alternado)',meta:'3×10 cada lado · 60 s',
+       img:['Dumbbell_Lunges/0.jpg','Dumbbell_Lunges/1.jpg'],
+       yt:'avanço halteres passada execução',
+       tech:null,
        sets:[{t:'work',reps:'10'},{t:'work',reps:'10'},{t:'work',reps:'10'}],
        swaps:[
          {name:'Avanço no Smith',muscle:'Quadríceps · Glúteos',why:'Trajetória guiada — mais estável. Use se tiver dificuldade de equilíbrio com halteres livres.'},
          {name:'Cadeira Extensora (unilateral)',muscle:'Quadríceps (isolado)',why:'Substituto seguro para joelhos sensíveis. Sem impacto na articulação.'},
          {name:'Step Up com Halter (subida no banco)',muscle:'Glúteos · Quadríceps',why:'Trabalho funcional — ótimo para glúteo médio e equilíbrio. Carga mais leve, mais controle.'},
        ]},
-      {name:'Prancha + Elevação de Pernas (superset)',meta:'3×30s+15 · 30 s',tech:{type:'giant',how:'Prancha isométrica 30 seg, sem descanso vire e execute 15 elevações de pernas deitada. Descanse 30 s e repita.'},
+      {name:'Prancha + Elevação de Pernas (superset)',meta:'3×30s+15 · 30 s',
+       img:['Plank/0.jpg','Flat_Bench_Lying_Leg_Raise/0.jpg'],
+       yt:'prancha abdominal elevação pernas execução',
+       tech:{type:'giant',how:'Prancha isométrica 30 seg, sem descanso vire e execute 15 elevações de pernas deitada. Descanse 30 s e repita.'},
        sets:[{t:'work',reps:'30s+15'},{t:'work',reps:'30s+15'},{t:'work',reps:'30s+15'}],
        swaps:[
          {name:'Prancha Lateral + Abdominal Bicicleta',muscle:'Core lateral · Oblíquos',why:'Alternativa que trabalha mais os oblíquos. Mesma estrutura de superset, mesmo tempo de descanso.'},
@@ -448,26 +498,38 @@ const DAYS = [
     id:'C', name:'UPPER B', focus:'Costas · Peito · Bíceps · Tríceps',
     notes:'<b>Aquecimento:</b> Band pull-apart 2×20 + rotação de punhos. Foque em puxar a escápula para baixo em todos os exercícios de costas.',
     exercises:[
-      {name:'Remada Curvada com Halter (unilateral)',meta:'3×12 cada lado · 60 s',tech:{type:'rp',how:'No último set de cada lado: execute até falha → 15 seg descanso → mais reps. Mantenha coluna neutra durante toda a execução.'},
+      {name:'Remada Curvada com Halter (unilateral)',meta:'3×12 cada lado · 60 s',
+       img:['One-Arm_Dumbbell_Row/0.jpg','One-Arm_Dumbbell_Row/1.jpg'],
+       yt:'remada unilateral halter execução costas',
+       tech:{type:'rp',how:'No último set de cada lado: execute até falha → 15 seg descanso → mais reps. Mantenha coluna neutra durante toda a execução.'},
        sets:[{t:'work',reps:'12'},{t:'work',reps:'12'},{t:'work',reps:'12'}],
        swaps:[
          {name:'Remada na Máquina (bilateral)',muscle:'Dorsal · Romboides · Bíceps',why:'Versão bilateral com apoio — ideal quando houver desconforto lombar na versão curvada.'},
          {name:'Remada Cavalinho',muscle:'Dorsal médio · Romboides',why:'Apoio no peitoral libera a lombar. Mais seguro para iniciantes ou em dias de lombar cansada.'},
          {name:'Puxada Aberta (pronada)',muscle:'Dorsal · Bíceps',why:'Boa variação vertical quando a remada horizontal não está disponível.'},
        ]},
-      {name:'Supino Inclinado com Halter',meta:'3×12 · 60 s',tech:null,
+      {name:'Supino Inclinado com Halter',meta:'3×12 · 60 s',
+       img:['Incline_Dumbbell_Press/0.jpg','Incline_Dumbbell_Press/1.jpg'],
+       yt:'supino inclinado halteres execução peitoral',
+       tech:null,
        sets:[{t:'work',reps:'12'},{t:'work',reps:'12'},{t:'work',reps:'12'}],
        swaps:[
          {name:'Supino Inclinado na Máquina',muscle:'Peitoral superior · Tríceps',why:'Substituto direto e mais estável. Mesma carga e repetições — sem necessidade de ajuste.'},
          {name:'Cross Over Alto (polia alta)',muscle:'Peitoral superior',why:'Versão de isolamento — ideal para dias em que quer menor carga articular no ombro.'},
        ]},
-      {name:'Crucifixo Inverso (posterior ombro)',meta:'3×15 · 45 s',tech:null,
+      {name:'Crucifixo Inverso (posterior ombro)',meta:'3×15 · 45 s',
+       img:['Bent_Over_Dumbbell_Rear_Delt_Raise_With_Head_On_Bench/0.jpg','Bent_Over_Dumbbell_Rear_Delt_Raise_With_Head_On_Bench/1.jpg'],
+       yt:'crucifixo inverso ombro posterior execução',
+       tech:null,
        sets:[{t:'work',reps:'15'},{t:'work',reps:'15'},{t:'work',reps:'15'}],
        swaps:[
          {name:'Peck Deck Inverso (máquina)',muscle:'Deltóide posterior · Romboides',why:'Versão na máquina com amplitude controlada — mais fácil de manter a forma correta.'},
          {name:'Encolhimento Inverso com Elástico',muscle:'Deltóide posterior · Trapézio',why:'Sem equipamento específico — elástico mantém tensão constante e é articulamente seguro.'},
        ]},
-      {name:'Rosca Direta + Triceps Polia (superset)',meta:'3×12+12 · 45 s',tech:{type:'giant',how:'12 roscas diretas com halteres → sem pausa → 12 extensões na polia (corda). Descanse 45 s. Finaliza braços de forma eficiente.'},
+      {name:'Rosca Direta + Triceps Polia (superset)',meta:'3×12+12 · 45 s',
+       img:['Dumbbell_Alternate_Bicep_Curl/0.jpg','Dumbbell_Alternate_Bicep_Curl/1.jpg'],
+       yt:'rosca direta halteres bíceps execução',
+       tech:{type:'giant',how:'12 roscas diretas com halteres → sem pausa → 12 extensões na polia (corda). Descanse 45 s. Finaliza braços de forma eficiente.'},
        sets:[{t:'work',reps:'12+12'},{t:'work',reps:'12+12'},{t:'work',reps:'12+12'}],
        swaps:[
          {name:'Rosca Scott + Triceps Francês',muscle:'Bíceps (isolado) · Tríceps longo',why:'Versão mais isolada dos dois grupos. Carga menor, amplitude maior — melhor para finalização.'},
@@ -479,26 +541,38 @@ const DAYS = [
     id:'D', name:'LOWER B', focus:'Posterior · Glúteos · Core',
     notes:'<b>Aquecimento:</b> 3 min elíptico leve + alongamento de isquiotibiais 30 seg cada lado. Dia de intensidade moderada — foco total na contração.',
     exercises:[
-      {name:'Stiff com Halteres',meta:'3×12 · 60 s',tech:null,
+      {name:'Stiff com Halteres',meta:'3×12 · 60 s',
+       img:['Romanian_Deadlift/0.jpg','Romanian_Deadlift/1.jpg'],
+       yt:'stiff halteres isquiotibiais execução correta',
+       tech:null,
        sets:[{t:'aquec',reps:'15'},{t:'work',reps:'12'},{t:'work',reps:'12'},{t:'work',reps:'12'}],
        swaps:[
          {name:'Stiff com Barra',muscle:'Isquiotibiais · Glúteo · Lombar',why:'Versão com barra permite mais carga. Use quando quiser progredir além dos halteres disponíveis.'},
          {name:'Mesa Flexora Deitada',muscle:'Isquiotibiais (isolado)',why:'Isolamento puro sem carga lombar. Boa opção quando há desconforto na cadeia posterior.'},
          {name:'Good Morning com Barra',muscle:'Isquiotibiais · Lombar · Glúteo',why:'Exercício de cadeia posterior completa — exige mais técnica. Carga bem menor que o stiff.'},
        ]},
-      {name:'Mesa Flexora',meta:'3×12–15 · 60 s',tech:{type:'drop',how:'No último set: execute até falha → reduza 25% da carga sem pausa → execute até nova falha. Esprema o glúteo no topo de cada repetição.'},
+      {name:'Mesa Flexora',meta:'3×12–15 · 60 s',
+       img:['Lying_Leg_Curls/0.jpg','Lying_Leg_Curls/1.jpg'],
+       yt:'mesa flexora posterior coxa execução',
+       tech:{type:'drop',how:'No último set: execute até falha → reduza 25% da carga sem pausa → execute até nova falha. Esprema o glúteo no topo de cada repetição.'},
        sets:[{t:'work',reps:'15'},{t:'work',reps:'12'},{t:'work',reps:'12'}],
        swaps:[
          {name:'Flexão Nórdica (com apoio)',muscle:'Isquiotibiais (excêntrico)',why:'Excelente para prevenção de lesões — trabalho excêntrico intenso. Use peso corporal ou elástico.'},
          {name:'Stiff Unilateral com Halter',muscle:'Isquiotibiais · Glúteo (unilateral)',why:'Versão de equilíbrio — corrige assimetrias e dispensa a máquina. Carga moderada.'},
        ]},
-      {name:'Panturrilha em Pé',meta:'3×20 · 30 s',tech:null,
+      {name:'Panturrilha em Pé',meta:'3×20 · 30 s',
+       img:['Standing_Calf_Raises/0.jpg','Standing_Calf_Raises/1.jpg'],
+       yt:'panturrilha em pé academia execução',
+       tech:null,
        sets:[{t:'work',reps:'20'},{t:'work',reps:'20'},{t:'work',reps:'20'}],
        swaps:[
          {name:'Panturrilha Sentada (máquina)',muscle:'Sóleo (feixe profundo)',why:'Trabalha o sóleo com joelho fletido — complementar à panturrilha em pé. Pode combinar os dois.'},
          {name:'Panturrilha no Leg Press',muscle:'Gastrocnêmio · Sóleo',why:'Boa variação quando a máquina específica não está disponível. Amplitude similar.'},
        ]},
-      {name:'Abdominal Bicicleta + Prancha Lateral (superset)',meta:'3×20+30s · 30 s',tech:{type:'giant',how:'20 bicicletas controladas → sem pausa → prancha lateral 30 seg cada lado. Descanse 30 s. Core completo em menos tempo.'},
+      {name:'Abdominal Bicicleta + Prancha Lateral (superset)',meta:'3×20+30s · 30 s',
+       img:['Air_Bike/0.jpg','Air_Bike/1.jpg'],
+       yt:'abdominal bicicleta prancha lateral core execução',
+       tech:{type:'giant',how:'20 bicicletas controladas → sem pausa → prancha lateral 30 seg cada lado. Descanse 30 s. Core completo em menos tempo.'},
        sets:[{t:'work',reps:'20+30s'},{t:'work',reps:'20+30s'},{t:'work',reps:'20+30s'}],
        swaps:[
          {name:'Crunch Inverso + Prancha Frontal',muscle:'Reto abdominal · Core anterior',why:'Substituto mais simples — menos rotação, mais fácil de controlar para iniciantes no core.'},
@@ -588,6 +662,22 @@ function renderDay(){
       techBox=`<div class="tech-box ${ex.tech.type}"><div class="tech-box-title">📌 ${TECH_LABELS[ex.tech.type]} — Como executar</div>${ex.tech.how}</div>`;
     }
 
+    const ytUrl = ex.yt ? `https://www.youtube.com/results?search_query=${encodeURIComponent(ex.yt)}` : '';
+    const imgHtml = ex.img ? `
+      <div class="demo-wrap">
+        <div class="demo-btns">
+          <button class="demo-toggle-btn" onclick="toggleDemo(this)">📸 Ver imagem</button>
+          ${ytUrl ? `<a href="${ytUrl}" target="_blank" class="yt-btn"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.8 15.5V8.5l6.3 3.5-6.3 3.5z"/></svg>▶ Ver vídeo</a>` : ''}
+        </div>
+        <div class="demo-imgs" style="display:none;">
+          <div class="demo-label">Início · Fim do movimento</div>
+          <div class="demo-row">
+            <img src="" data-src="${BASE_IMG}${ex.img[0]}" alt="Posição inicial" loading="lazy" onerror="this.parentElement.style.display='none'">
+            <img src="" data-src="${BASE_IMG}${ex.img[1]}" alt="Posição final" loading="lazy" onerror="this.parentElement.style.display='none'">
+          </div>
+        </div>
+      </div>` : '';
+
     card.innerHTML=`
       <div class="ex-header" onclick="toggleEx(this)">
         <div>
@@ -597,6 +687,7 @@ function renderDay(){
         <span class="ex-expand">▾</span>
       </div>
       <div class="ex-sets">
+        ${imgHtml}
         ${techBox}
         <table class="sets-table">
           <thead><tr><th>Série</th><th>Tipo</th><th>Carga (kg)</th><th>Reps</th></tr></thead>
@@ -613,7 +704,7 @@ function renderDay(){
             </tr>`;
           }).join('')}</tbody>
         </table>
-        <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+        <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;align-items:center;">
           ${ex.swaps&&ex.swaps.length?`<button class="ex-swap-btn${isSwapped?' swapped':''}" onclick="openExSwap(${ei})">↔ ${isSwapped?'Ver substituições':'Substituir exercício'}</button>`:''}
           ${isSwapped?`<button class="ex-swap-btn" style="color:var(--green);border-color:rgba(134,239,172,.4);" onclick="restoreEx(${ei})">↩ Restaurar original</button>`:''}
         </div>
@@ -629,376 +720,345 @@ function renderDay(){
   obsBox.innerHTML=`
     <div class="obs-box-title">✏️ Observações e ajustes do dia</div>
     <textarea class="obs-textarea" id="obsTextarea" placeholder="Ex: senti dor no ombro no supino, quero trocar o hip thrust por outra coisa, aumentei a carga no agachamento...">${savedObs}</textarea>
-    <button class="obs-save-btn" onclick="saveObs()">Salvar observação</button>`;
-  content.appendChild(obsBox);
 
-  document.getElementById('todayDate').textContent=today()+' · Semana '+curWeek;
+```
+<button class="obs-save-btn" onclick="saveObs()">Salvar observação</button>`;
+```
+
+content.appendChild(obsBox);
+
+document.getElementById(‘todayDate’).textContent=today()+’ · Semana ’+curWeek;
 }
 
 function openExSwap(ei){
-  const day=DAYS[curDay];
-  const ex=day.exercises[ei];
-  const key=storageKey();
-  const saved=history[key]||{};
-  const isSwapped=saved[`ex${ei}_swapped`];
+const day=DAYS[curDay];
+const ex=day.exercises[ei];
+const key=storageKey();
+const saved=history[key]||{};
+const isSwapped=saved[`ex${ei}_swapped`];
 
-  document.getElementById('modalTitle').textContent='Substituir: '+ex.name;
-  const body=document.getElementById('modalBody');
-  body.innerHTML='';
+document.getElementById(‘modalTitle’).textContent=‘Substituir: ‘+ex.name;
+const body=document.getElementById(‘modalBody’);
+body.innerHTML=’’;
 
-  body.innerHTML+=`<div class="swap-group-title">🎯 Músculo principal trabalhado</div>
-    <p style="font-size:12px;color:var(--muted2);padding:8px 0 12px;">${ex.focus||ex.meta}</p>`;
+body.innerHTML+=`<div class="swap-group-title">🎯 Músculo principal trabalhado</div> <p style="font-size:12px;color:var(--muted2);padding:8px 0 12px;">${ex.focus||ex.meta}</p>`;
 
-  if(isSwapped){
-    body.innerHTML+=`<div class="swap-group-title">Exercício atual (substituído)</div>
-      <div class="swap-ex-opt">
-        <div class="swap-ex-top">
-          <div><div class="swap-ex-name" style="color:var(--accent)">${saved[`ex${ei}_swapName`]}</div><div class="swap-ex-muscle">Substituição ativa</div></div>
-          <button class="swap-ex-btn restore" onclick="restoreEx(${ei});closeModalDirect()">↩ Restaurar</button>
-        </div>
-      </div>
-      <div class="swap-group-title">Outras opções</div>`;
-  } else {
-    body.innerHTML+=`<div class="swap-group-title">Exercício atual</div>
-      <div class="swap-ex-opt">
-        <div class="swap-ex-top">
-          <div><div class="swap-ex-name">${ex.name}</div><div class="swap-ex-muscle">Original do plano</div></div>
-          <button class="swap-ex-btn" style="opacity:.4;cursor:default">Ativo</button>
-        </div>
-      </div>
-      <div class="swap-group-title">Substitutos recomendados</div>`;
-  }
+if(isSwapped){
+body.innerHTML+=`<div class="swap-group-title">Exercício atual (substituído)</div> <div class="swap-ex-opt"> <div class="swap-ex-top"> <div><div class="swap-ex-name" style="color:var(--accent)">${saved[`ex${ei}_swapName`]}</div><div class="swap-ex-muscle">Substituição ativa</div></div> <button class="swap-ex-btn restore" onclick="restoreEx(${ei});closeModalDirect()">↩ Restaurar</button> </div> </div> <div class="swap-group-title">Outras opções</div>`;
+} else {
+body.innerHTML+=`<div class="swap-group-title">Exercício atual</div> <div class="swap-ex-opt"> <div class="swap-ex-top"> <div><div class="swap-ex-name">${ex.name}</div><div class="swap-ex-muscle">Original do plano</div></div> <button class="swap-ex-btn" style="opacity:.4;cursor:default">Ativo</button> </div> </div> <div class="swap-group-title">Substitutos recomendados</div>`;
+}
 
-  ex.swaps.forEach((sw,si)=>{
-    body.innerHTML+=`<div class="swap-ex-opt">
-      <div class="swap-ex-top">
-        <div>
-          <div class="swap-ex-name">${sw.name}</div>
-          <div class="swap-ex-muscle">💪 ${sw.muscle}</div>
-        </div>
-        <button class="swap-ex-btn" onclick="applyExSwap(${ei},'${sw.name.replace(/'/g,"\\'")}')">Usar este</button>
-      </div>
-      <div class="swap-ex-why">💡 ${sw.why}</div>
-    </div>`;
-  });
+ex.swaps.forEach((sw,si)=>{
+body.innerHTML+=`<div class="swap-ex-opt"> <div class="swap-ex-top"> <div> <div class="swap-ex-name">${sw.name}</div> <div class="swap-ex-muscle">💪 ${sw.muscle}</div> </div> <button class="swap-ex-btn" onclick="applyExSwap(${ei},'${sw.name.replace(/'/g,"\\'")}')">Usar este</button> </div> <div class="swap-ex-why">💡 ${sw.why}</div> </div>`;
+});
 
-  document.getElementById('modalOverlay').classList.add('show');
+document.getElementById(‘modalOverlay’).classList.add(‘show’);
 }
 
 function applyExSwap(ei,swapName){
-  const key=storageKey();
-  if(!history[key]) history[key]={};
-  history[key][`ex${ei}_swapped`]=true;
-  history[key][`ex${ei}_swapName`]=swapName;
-  saveHistory();
-  closeModalDirect();
-  renderDay();
-  // reopen card
-  setTimeout(()=>{
-    const cards=[...document.querySelectorAll('.ex-card')];
-    if(cards[ei]) cards[ei].classList.add('open');
-  },50);
-  showToast('↔ Exercício substituído!');
+const key=storageKey();
+if(!history[key]) history[key]={};
+history[key][`ex${ei}_swapped`]=true;
+history[key][`ex${ei}_swapName`]=swapName;
+saveHistory();
+closeModalDirect();
+renderDay();
+// reopen card
+setTimeout(()=>{
+const cards=[…document.querySelectorAll(’.ex-card’)];
+if(cards[ei]) cards[ei].classList.add(‘open’);
+},50);
+showToast(‘↔ Exercício substituído!’);
 }
 
 function restoreEx(ei){
-  const key=storageKey();
-  if(history[key]){
-    delete history[key][`ex${ei}_swapped`];
-    delete history[key][`ex${ei}_swapName`];
-  }
-  saveHistory();
-  renderDay();
-  showToast('↩ Exercício restaurado.');
+const key=storageKey();
+if(history[key]){
+delete history[key][`ex${ei}_swapped`];
+delete history[key][`ex${ei}_swapName`];
+}
+saveHistory();
+renderDay();
+showToast(‘↩ Exercício restaurado.’);
 }
 
 function saveObs(){
-  const key=storageKey();
-  const obsKey=`obs_${key}`;
-  const val=document.getElementById('obsTextarea')?.value||'';
-  history[obsKey]=val;
-  saveHistory();
-  showToast('✓ Observação salva!');
+const key=storageKey();
+const obsKey=`obs_${key}`;
+const val=document.getElementById(‘obsTextarea’)?.value||’’;
+history[obsKey]=val;
+saveHistory();
+showToast(‘✓ Observação salva!’);
 }
 
 function toggleEx(header){
-  header.parentElement.classList.toggle('open');
+header.parentElement.classList.toggle(‘open’);
+}
+
+function toggleDemo(btn){
+const wrap=btn.parentElement;
+const box=wrap.querySelector(’.demo-imgs’);
+const isOpen=box.style.display===‘block’;
+if(isOpen){
+box.style.display=‘none’;
+btn.classList.remove(‘open’);
+btn.textContent=‘📸 Ver demonstração’;
+} else {
+// lazy load: copy data-src to src on first open
+box.querySelectorAll(‘img[data-src]’).forEach(img=>{
+if(!img.src||img.src===window.location.href){
+img.src=img.dataset.src;
+}
+});
+box.style.display=‘block’;
+btn.classList.add(‘open’);
+btn.textContent=‘📸 Ocultar demonstração’;
+}
 }
 
 function onChange(input){
-  const key=storageKey();
-  if(!history[key]) history[key]={};
-  const sk=input.dataset.key;
-  if(!history[key][sk]) history[key][sk]={};
-  history[key][sk][input.dataset.field]=input.value;
-  // detect PR
-  if(input.dataset.field==='carga'){
-    let maxPrev=0;
-    Object.keys(history).filter(k=>k!==key).forEach(k=>{
-      if(history[k][sk]?.carga) maxPrev=Math.max(maxPrev,parseFloat(history[k][sk].carga)||0);
-    });
-    if(parseFloat(input.value)>maxPrev && maxPrev>0){
-      history[key][sk].pr=true;
-      showToast('🏆 Novo PR registrado!');
-    }
-  }
+const key=storageKey();
+if(!history[key]) history[key]={};
+const sk=input.dataset.key;
+if(!history[key][sk]) history[key][sk]={};
+history[key][sk][input.dataset.field]=input.value;
+// detect PR
+if(input.dataset.field===‘carga’){
+let maxPrev=0;
+Object.keys(history).filter(k=>k!==key).forEach(k=>{
+if(history[k][sk]?.carga) maxPrev=Math.max(maxPrev,parseFloat(history[k][sk].carga)||0);
+});
+if(parseFloat(input.value)>maxPrev && maxPrev>0){
+history[key][sk].pr=true;
+showToast(‘🏆 Novo PR registrado!’);
+}
+}
 }
 
 function saveDay(){
-  saveHistory();
-  showToast('✓ Sessão salva com sucesso!');
+saveHistory();
+showToast(‘✓ Sessão salva com sucesso!’);
 }
 
 function clearDay(){
-  const key=storageKey();
-  delete history[key];
-  saveHistory();
-  renderDay();
-  showToast('↺ Dia limpo.',false);
+const key=storageKey();
+delete history[key];
+saveHistory();
+renderDay();
+showToast(‘↺ Dia limpo.’,false);
 }
 
 // ══════════════════════════════════════════════════════
 // DATA — DIETA
 // ══════════════════════════════════════════════════════
 const MEALS_BASE = [
-  {
-    icon:'🌅', title:'Café da Manhã', time:'07:00 – 08:00',
-    kcal:400,
-    obs:'Refeição mais importante. Não pule mesmo sem fome — comece pelo líquido (café, suco) e inclua o sólido 15 min depois se precisar.',
-    items:[
-      {name:'Ovos mexidos',qty:'3 ovos',kcal:210,p:19,c:1,g:14,group:'proteína',swaps:[
-        {name:'Omelete de claras',qty:'4 claras + 1 ovo',kcal:200,p:22,c:1,g:11,diff:false},
-        {name:'Queijo cottage',qty:'150g',kcal:110,p:14,c:5,g:5,diff:false},
-      ]},
-      {name:'Pão integral',qty:'2 fatias (60g)',kcal:140,p:5,c:26,g:2,group:'carboidrato',swaps:[
-        {name:'Tapioca',qty:'2 unid (60g total)',kcal:110,p:0,c:28,g:0,diff:false},
-        {name:'Batata-doce cozida',qty:'100g',kcal:90,p:2,c:21,g:0,diff:false},
-      ]},
-      {name:'Abacate',qty:'½ unid (80g)',kcal:120,p:1,c:6,g:11,group:'gordura',swaps:[
-        {name:'Pasta de amendoim',qty:'1 colher sopa (15g)',kcal:90,p:4,c:3,g:8,diff:false},
-      ]},
-    ]
-  },
-  {
-    icon:'🍎', title:'Lanche da Manhã', time:'10:00 – 10:30',
-    kcal:200,
-    obs:'Pequeno lanche para manter glicemia estável e evitar chegar com muita fome no almoço.',
-    items:[
-      {name:'Iogurte grego natural',qty:'170g',kcal:130,p:12,c:8,g:5,group:'proteína',swaps:[
-        {name:'Iogurte Skyr',qty:'150g',kcal:120,p:15,c:7,g:0,diff:false},
-        {name:'Queijo minas frescal',qty:'80g',kcal:120,p:9,c:2,g:8,diff:false},
-      ]},
-      {name:'Banana',qty:'1 med (100g)',kcal:89,p:1,c:23,g:0,group:'carboidrato',swaps:[
-        {name:'Maçã',qty:'1 med (150g)',kcal:80,p:0,c:21,g:0,diff:false},
-        {name:'Uva',qty:'1 cacho (150g)',kcal:100,p:1,c:25,g:0,diff:false},
-      ]},
-    ]
-  },
-  {
-    icon:'☀️', title:'Almoço', time:'12:30 – 13:30',
-    kcal:480,
-    obs:'Monte o prato seguindo: ½ prato de vegetais, ¼ proteína, ¼ carboidrato. Mastigue devagar e pare ao sentir 80% de satisfação.',
-    items:[
-      {name:'Frango grelhado (filé)',qty:'150g',kcal:165,p:31,c:0,g:4,group:'proteína',swaps:[
-        {name:'Peixe grelhado (tilápia)',qty:'150g',kcal:155,p:30,c:0,g:4,diff:false},
-        {name:'Carne bovina (patinho)',qty:'120g',kcal:165,p:28,c:0,g:6,diff:false},
-      ]},
-      {name:'Arroz integral',qty:'4 col sopa (80g cru)',kcal:110,p:3,c:23,g:1,group:'carboidrato',swaps:[
-        {name:'Arroz branco',qty:'4 col sopa',kcal:120,p:2,c:25,g:0,diff:false},
-        {name:'Macarrão integral',qty:'60g cru',kcal:110,p:4,c:22,g:1,diff:false},
-      ]},
-      {name:'Feijão',qty:'1 concha (80g cozido)',kcal:70,p:5,c:13,g:0,group:'leguminosa',swaps:[
-        {name:'Lentilha',qty:'80g cozida',kcal:75,p:6,c:13,g:0,diff:false},
-        {name:'Grão-de-bico',qty:'80g cozido',kcal:75,p:5,c:13,g:1,diff:false},
-      ]},
-      {name:'Salada variada',qty:'à vontade + fio de azeite',kcal:60,p:2,c:6,g:3,group:'vegetal',swaps:[
-        {name:'Legumes refogados',qty:'150g',kcal:60,p:2,c:8,g:2,diff:false},
-      ]},
-    ]
-  },
-  {
-    icon:'🌿', title:'Lanche da Tarde', time:'15:30 – 16:30',
-    kcal:280,
-    obs:'Refeição pré-treino se o treino for às 17–18h. Priorize carboidrato + proteína leve.',
-    items:[
-      {name:'Whey Protein',qty:'1 scoop (30g)',kcal:120,p:24,c:3,g:2,group:'proteína',swaps:[
-        {name:'Frango desfiado',qty:'100g',kcal:110,p:21,c:0,g:3,diff:false},
-        {name:'Atum em lata',qty:'1 lata (100g)',kcal:110,p:24,c:0,g:1,diff:false},
-      ]},
-      {name:'Aveia em flocos',qty:'40g',kcal:148,p:5,c:26,g:3,group:'carboidrato',swaps:[
-        {name:'Pão integral',qty:'2 fatias',kcal:140,p:5,c:26,g:2,diff:false},
-        {name:'Batata-doce',qty:'150g cozida',kcal:135,p:2,c:32,g:0,diff:false},
-      ]},
-    ]
-  },
-  {
-    icon:'🌙', title:'Jantar', time:'19:00 – 20:00',
-    kcal:290,
-    obs:'Jantar mais leve. Priorize proteínas e vegetais. Reduza carboidratos simples à noite. Beba água com limão antes.',
-    items:[
-      {name:'Ovo cozido',qty:'2 unidades',kcal:140,p:12,c:1,g:10,group:'proteína',swaps:[
-        {name:'Filé de peixe',qty:'120g',kcal:120,p:24,c:0,g:3,diff:false},
-        {name:'Tofu grelhado',qty:'150g',kcal:100,p:10,c:2,g:6,diff:false},
-      ]},
-      {name:'Macarrão integral c/ legumes',qty:'60g cru + 150g legumes',kcal:150,p:6,c:27,g:2,group:'carboidrato',swaps:[
-        {name:'Abobrinha recheada',qty:'200g + 60g frango',kcal:120,p:14,c:8,g:4,diff:false},
-        {name:'Arroz + brócolis salteado',qty:'3 col + 150g',kcal:140,p:4,c:26,g:2,diff:false},
-      ]},
-    ]
-  },
-  {
-    icon:'⭐', title:'Ceia (opcional)', time:'21:30 – 22:00',
-    kcal:160,
-    obs:'Apenas se sentir fome. Priorize caseína natural (cottage, queijo, iogurte) — de digestão lenta, protege musculatura durante o sono.',
-    items:[
-      {name:'Queijo cottage',qty:'150g',kcal:110,p:14,c:5,g:5,group:'proteína',swaps:[
-        {name:'Iogurte grego natural',qty:'170g',kcal:130,p:12,c:8,g:5,diff:false},
-        {name:'Leite + cacau 70%',qty:'200ml + 1 quadrado',kcal:130,p:8,c:14,g:5,diff:false},
-      ]},
-    ]
-  },
+{
+icon:‘🌅’, title:‘Café da Manhã’, time:‘07:00 – 08:00’,
+kcal:400,
+obs:‘Refeição mais importante. Não pule mesmo sem fome — comece pelo líquido (café, suco) e inclua o sólido 15 min depois se precisar.’,
+items:[
+{name:‘Ovos mexidos’,qty:‘3 ovos’,kcal:210,p:19,c:1,g:14,group:‘proteína’,swaps:[
+{name:‘Omelete de claras’,qty:‘4 claras + 1 ovo’,kcal:200,p:22,c:1,g:11,diff:false},
+{name:‘Queijo cottage’,qty:‘150g’,kcal:110,p:14,c:5,g:5,diff:false},
+]},
+{name:‘Pão integral’,qty:‘2 fatias (60g)’,kcal:140,p:5,c:26,g:2,group:‘carboidrato’,swaps:[
+{name:‘Tapioca’,qty:‘2 unid (60g total)’,kcal:110,p:0,c:28,g:0,diff:false},
+{name:‘Batata-doce cozida’,qty:‘100g’,kcal:90,p:2,c:21,g:0,diff:false},
+]},
+{name:‘Abacate’,qty:‘½ unid (80g)’,kcal:120,p:1,c:6,g:11,group:‘gordura’,swaps:[
+{name:‘Pasta de amendoim’,qty:‘1 colher sopa (15g)’,kcal:90,p:4,c:3,g:8,diff:false},
+]},
+]
+},
+{
+icon:‘🍎’, title:‘Lanche da Manhã’, time:‘10:00 – 10:30’,
+kcal:200,
+obs:‘Pequeno lanche para manter glicemia estável e evitar chegar com muita fome no almoço.’,
+items:[
+{name:‘Iogurte grego natural’,qty:‘170g’,kcal:130,p:12,c:8,g:5,group:‘proteína’,swaps:[
+{name:‘Iogurte Skyr’,qty:‘150g’,kcal:120,p:15,c:7,g:0,diff:false},
+{name:‘Queijo minas frescal’,qty:‘80g’,kcal:120,p:9,c:2,g:8,diff:false},
+]},
+{name:‘Banana’,qty:‘1 med (100g)’,kcal:89,p:1,c:23,g:0,group:‘carboidrato’,swaps:[
+{name:‘Maçã’,qty:‘1 med (150g)’,kcal:80,p:0,c:21,g:0,diff:false},
+{name:‘Uva’,qty:‘1 cacho (150g)’,kcal:100,p:1,c:25,g:0,diff:false},
+]},
+]
+},
+{
+icon:‘☀️’, title:‘Almoço’, time:‘12:30 – 13:30’,
+kcal:480,
+obs:‘Monte o prato seguindo: ½ prato de vegetais, ¼ proteína, ¼ carboidrato. Mastigue devagar e pare ao sentir 80% de satisfação.’,
+items:[
+{name:‘Frango grelhado (filé)’,qty:‘150g’,kcal:165,p:31,c:0,g:4,group:‘proteína’,swaps:[
+{name:‘Peixe grelhado (tilápia)’,qty:‘150g’,kcal:155,p:30,c:0,g:4,diff:false},
+{name:‘Carne bovina (patinho)’,qty:‘120g’,kcal:165,p:28,c:0,g:6,diff:false},
+]},
+{name:‘Arroz integral’,qty:‘4 col sopa (80g cru)’,kcal:110,p:3,c:23,g:1,group:‘carboidrato’,swaps:[
+{name:‘Arroz branco’,qty:‘4 col sopa’,kcal:120,p:2,c:25,g:0,diff:false},
+{name:‘Macarrão integral’,qty:‘60g cru’,kcal:110,p:4,c:22,g:1,diff:false},
+]},
+{name:‘Feijão’,qty:‘1 concha (80g cozido)’,kcal:70,p:5,c:13,g:0,group:‘leguminosa’,swaps:[
+{name:‘Lentilha’,qty:‘80g cozida’,kcal:75,p:6,c:13,g:0,diff:false},
+{name:‘Grão-de-bico’,qty:‘80g cozido’,kcal:75,p:5,c:13,g:1,diff:false},
+]},
+{name:‘Salada variada’,qty:‘à vontade + fio de azeite’,kcal:60,p:2,c:6,g:3,group:‘vegetal’,swaps:[
+{name:‘Legumes refogados’,qty:‘150g’,kcal:60,p:2,c:8,g:2,diff:false},
+]},
+]
+},
+{
+icon:‘🌿’, title:‘Lanche da Tarde’, time:‘15:30 – 16:30’,
+kcal:280,
+obs:‘Refeição pré-treino se o treino for às 17–18h. Priorize carboidrato + proteína leve.’,
+items:[
+{name:‘Whey Protein’,qty:‘1 scoop (30g)’,kcal:120,p:24,c:3,g:2,group:‘proteína’,swaps:[
+{name:‘Frango desfiado’,qty:‘100g’,kcal:110,p:21,c:0,g:3,diff:false},
+{name:‘Atum em lata’,qty:‘1 lata (100g)’,kcal:110,p:24,c:0,g:1,diff:false},
+]},
+{name:‘Aveia em flocos’,qty:‘40g’,kcal:148,p:5,c:26,g:3,group:‘carboidrato’,swaps:[
+{name:‘Pão integral’,qty:‘2 fatias’,kcal:140,p:5,c:26,g:2,diff:false},
+{name:‘Batata-doce’,qty:‘150g cozida’,kcal:135,p:2,c:32,g:0,diff:false},
+]},
+]
+},
+{
+icon:‘🌙’, title:‘Jantar’, time:‘19:00 – 20:00’,
+kcal:290,
+obs:‘Jantar mais leve. Priorize proteínas e vegetais. Reduza carboidratos simples à noite. Beba água com limão antes.’,
+items:[
+{name:‘Ovo cozido’,qty:‘2 unidades’,kcal:140,p:12,c:1,g:10,group:‘proteína’,swaps:[
+{name:‘Filé de peixe’,qty:‘120g’,kcal:120,p:24,c:0,g:3,diff:false},
+{name:‘Tofu grelhado’,qty:‘150g’,kcal:100,p:10,c:2,g:6,diff:false},
+]},
+{name:‘Macarrão integral c/ legumes’,qty:‘60g cru + 150g legumes’,kcal:150,p:6,c:27,g:2,group:‘carboidrato’,swaps:[
+{name:‘Abobrinha recheada’,qty:‘200g + 60g frango’,kcal:120,p:14,c:8,g:4,diff:false},
+{name:‘Arroz + brócolis salteado’,qty:‘3 col + 150g’,kcal:140,p:4,c:26,g:2,diff:false},
+]},
+]
+},
+{
+icon:‘⭐’, title:‘Ceia (opcional)’, time:‘21:30 – 22:00’,
+kcal:160,
+obs:‘Apenas se sentir fome. Priorize caseína natural (cottage, queijo, iogurte) — de digestão lenta, protege musculatura durante o sono.’,
+items:[
+{name:‘Queijo cottage’,qty:‘150g’,kcal:110,p:14,c:5,g:5,group:‘proteína’,swaps:[
+{name:‘Iogurte grego natural’,qty:‘170g’,kcal:130,p:12,c:8,g:5,diff:false},
+{name:‘Leite + cacau 70%’,qty:‘200ml + 1 quadrado’,kcal:130,p:8,c:14,g:5,diff:false},
+]},
+]
+},
 ];
 
 let currentMeals=JSON.parse(JSON.stringify(MEALS_BASE));
 let dCtx=null;
 
 function renderDiet(){
-  const content=document.getElementById('dietContent');
-  content.innerHTML='';
-  currentMeals.forEach((meal,mi)=>{
-    const card=document.createElement('div');
-    card.className='meal-card';
-    const totalKcal=meal.items.reduce((a,b)=>a+b.kcal,0);
-    const totalP=meal.items.reduce((a,b)=>a+b.p,0);
-    const totalC=meal.items.reduce((a,b)=>a+b.c,0);
-    const totalG=meal.items.reduce((a,b)=>a+b.g,0);
-    card.innerHTML=`
-      <div class="meal-header" onclick="toggleMeal(this)">
-        <div class="meal-title-wrap">
-          <span class="meal-icon">${meal.icon}</span>
-          <div>
-            <div class="meal-title">${meal.title}</div>
-            <div class="meal-time">${meal.time}</div>
-          </div>
-        </div>
-        <div style="display:flex;align-items:center;gap:12px;">
-          <div class="meal-kcal">${totalKcal} kcal<br><span style="font-size:9px;color:var(--muted)">P:${totalP}g · C:${totalC}g · G:${totalG}g</span></div>
-          <span class="meal-expand">▾</span>
-        </div>
-      </div>
-      <div class="meal-items">
-        ${meal.items.map((item,ii)=>`
-          <div class="food-row">
-            <div>
-              <div class="food-name">${item.name}</div>
-              <div class="food-macros">P:${item.p}g · C:${item.c}g · G:${item.g}g</div>
-            </div>
-            <div style="display:flex;align-items:center;gap:10px;">
-              <div class="food-qty">${item.qty}</div>
-              <button class="food-swap-btn" onclick="openSwap(${mi},${ii})">Trocar</button>
-            </div>
-          </div>
-        `).join('')}
-        ${meal.obs?`<div class="meal-obs">💡 ${meal.obs}</div>`:''}
-      </div>`;
-    content.appendChild(card);
-  });
+const content=document.getElementById(‘dietContent’);
+content.innerHTML=’’;
+currentMeals.forEach((meal,mi)=>{
+const card=document.createElement(‘div’);
+card.className=‘meal-card’;
+const totalKcal=meal.items.reduce((a,b)=>a+b.kcal,0);
+const totalP=meal.items.reduce((a,b)=>a+b.p,0);
+const totalC=meal.items.reduce((a,b)=>a+b.c,0);
+const totalG=meal.items.reduce((a,b)=>a+b.g,0);
+card.innerHTML=` <div class="meal-header" onclick="toggleMeal(this)"> <div class="meal-title-wrap"> <span class="meal-icon">${meal.icon}</span> <div> <div class="meal-title">${meal.title}</div> <div class="meal-time">${meal.time}</div> </div> </div> <div style="display:flex;align-items:center;gap:12px;"> <div class="meal-kcal">${totalKcal} kcal<br><span style="font-size:9px;color:var(--muted)">P:${totalP}g · C:${totalC}g · G:${totalG}g</span></div> <span class="meal-expand">▾</span> </div> </div> <div class="meal-items"> ${meal.items.map((item,ii)=>`
+<div class="food-row">
+<div>
+<div class="food-name">${item.name}</div>
+<div class="food-macros">P:${item.p}g · C:${item.c}g · G:${item.g}g</div>
+</div>
+<div style="display:flex;align-items:center;gap:10px;">
+<div class="food-qty">${item.qty}</div>
+<button class="food-swap-btn" onclick="openSwap(${mi},${ii})">Trocar</button>
+</div>
+</div>
+`).join('')} ${meal.obs?`<div class="meal-obs">💡 ${meal.obs}</div>`:''} </div>`;
+content.appendChild(card);
+});
 }
 
 function toggleMeal(header){
-  header.parentElement.classList.toggle('open');
+header.parentElement.classList.toggle(‘open’);
 }
 
 function openSwap(mi,ii){
-  const meal=currentMeals[mi];
-  const item=meal.items[ii];
-  const base=MEALS_BASE[mi].items[ii];
-  dCtx={mi,ii};
-  document.getElementById('modalTitle').textContent='Substituir: '+item.name;
-  const body=document.getElementById('modalBody');
-  body.innerHTML='';
+const meal=currentMeals[mi];
+const item=meal.items[ii];
+const base=MEALS_BASE[mi].items[ii];
+dCtx={mi,ii};
+document.getElementById(‘modalTitle’).textContent=‘Substituir: ‘+item.name;
+const body=document.getElementById(‘modalBody’);
+body.innerHTML=’’;
 
-  // current
-  body.innerHTML+=`<div class="swap-group-title">Atual</div>
-    <div class="swap-opt">
-      <div><div class="swap-opt-name">${item.name}</div><div class="swap-opt-macros">${item.qty} · P:${item.p}g C:${item.c}g G:${item.g}g · ${item.kcal}kcal</div></div>
-      <button class="swap-opt-btn" style="opacity:.4;cursor:default">Selecionado</button>
-    </div>`;
+// current
+body.innerHTML+=`<div class="swap-group-title">Atual</div> <div class="swap-opt"> <div><div class="swap-opt-name">${item.name}</div><div class="swap-opt-macros">${item.qty} · P:${item.p}g C:${item.c}g G:${item.g}g · ${item.kcal}kcal</div></div> <button class="swap-opt-btn" style="opacity:.4;cursor:default">Selecionado</button> </div>`;
 
-  // original
-  if(item.name!==base.name){
-    body.innerHTML+=`<div class="swap-group-title">Restaurar original</div>
-      <div class="swap-opt">
-        <div><div class="swap-opt-name">${base.name}</div><div class="swap-opt-macros">${base.qty} · P:${base.p}g C:${base.c}g G:${base.g}g · ${base.kcal}kcal</div></div>
-        <button class="swap-opt-btn" onclick="applySwap(${mi},${ii},'orig')">Restaurar</button>
-      </div>`;
-  }
+// original
+if(item.name!==base.name){
+body.innerHTML+=`<div class="swap-group-title">Restaurar original</div> <div class="swap-opt"> <div><div class="swap-opt-name">${base.name}</div><div class="swap-opt-macros">${base.qty} · P:${base.p}g C:${base.c}g G:${base.g}g · ${base.kcal}kcal</div></div> <button class="swap-opt-btn" onclick="applySwap(${mi},${ii},'orig')">Restaurar</button> </div>`;
+}
 
-  // swaps
-  if(base.swaps && base.swaps.length>0){
-    body.innerHTML+=`<div class="swap-group-title">Equivalentes (mesmo grupo: ${base.group})</div>`;
-    base.swaps.forEach((sw,si)=>{
-      const warn=sw.diff;
-      body.innerHTML+=`<div class="swap-opt">
-        <div>
-          <div class="swap-opt-name">${sw.name}${sw.diff?' ⚠️':''}</div>
-          <div class="swap-opt-macros">${sw.qty} · P:${sw.p}g C:${sw.c}g G:${sw.g}g · ${sw.kcal}kcal</div>
-          ${sw.diff?'<div style="font-size:9px;color:var(--orange)">Macros diferentes</div>':''}
-        </div>
-        <button class="swap-opt-btn ${warn?'warn':''}" onclick="applySwap(${mi},${ii},${si})">${warn?'⚠ Trocar':'Trocar'}</button>
-      </div>`;
-    });
-  }
+// swaps
+if(base.swaps && base.swaps.length>0){
+body.innerHTML+=`<div class="swap-group-title">Equivalentes (mesmo grupo: ${base.group})</div>`;
+base.swaps.forEach((sw,si)=>{
+const warn=sw.diff;
+body.innerHTML+=`<div class="swap-opt"> <div> <div class="swap-opt-name">${sw.name}${sw.diff?' ⚠️':''}</div> <div class="swap-opt-macros">${sw.qty} · P:${sw.p}g C:${sw.c}g G:${sw.g}g · ${sw.kcal}kcal</div> ${sw.diff?'<div style="font-size:9px;color:var(--orange)">Macros diferentes</div>':''} </div> <button class="swap-opt-btn ${warn?'warn':''}" onclick="applySwap(${mi},${ii},${si})">${warn?'⚠ Trocar':'Trocar'}</button> </div>`;
+});
+}
 
-  document.getElementById('modalOverlay').classList.add('show');
+document.getElementById(‘modalOverlay’).classList.add(‘show’);
 }
 
 function applySwap(mi,ii,swapIdx){
-  const base=MEALS_BASE[mi].items[ii];
-  if(swapIdx==='orig'){
-    currentMeals[mi].items[ii]=JSON.parse(JSON.stringify(base));
-    showToast('↺ Restaurado ao original');
-  } else {
-    const sw=base.swaps[swapIdx];
-    currentMeals[mi].items[ii]={...sw,group:base.group,swaps:base.swaps};
-    showToast('✓ Alimento substituído!');
-  }
-  closeModalDirect();
-  renderDiet();
-  // reopen meal
-  setTimeout(()=>{
-    const cards=[...document.querySelectorAll('.meal-card')];
-    if(cards[mi]) cards[mi].classList.add('open');
-  },50);
+const base=MEALS_BASE[mi].items[ii];
+if(swapIdx===‘orig’){
+currentMeals[mi].items[ii]=JSON.parse(JSON.stringify(base));
+showToast(‘↺ Restaurado ao original’);
+} else {
+const sw=base.swaps[swapIdx];
+currentMeals[mi].items[ii]={…sw,group:base.group,swaps:base.swaps};
+showToast(‘✓ Alimento substituído!’);
+}
+closeModalDirect();
+renderDiet();
+// reopen meal
+setTimeout(()=>{
+const cards=[…document.querySelectorAll(’.meal-card’)];
+if(cards[mi]) cards[mi].classList.add(‘open’);
+},50);
 }
 
 function closeModal(e){
-  if(e.target===document.getElementById('modalOverlay')) closeModalDirect();
+if(e.target===document.getElementById(‘modalOverlay’)) closeModalDirect();
 }
 function closeModalDirect(){
-  document.getElementById('modalOverlay').classList.remove('show');
-  dCtx=null;
+document.getElementById(‘modalOverlay’).classList.remove(‘show’);
+dCtx=null;
 }
 
 // ══════════════════════════════════════════════════════
 // NAV
 // ══════════════════════════════════════════════════════
 function switchPage(id,tab){
-  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
-  document.getElementById('page-'+id).classList.add('active');
-  document.querySelectorAll('.nav-tab').forEach(t=>t.classList.remove('active'));
-  if(tab) tab.classList.add('active');
-  document.getElementById('saveBar').style.display=id==='treino'?'flex':'none';
+document.querySelectorAll(’.page’).forEach(p=>p.classList.remove(‘active’));
+document.getElementById(‘page-’+id).classList.add(‘active’);
+document.querySelectorAll(’.nav-tab’).forEach(t=>t.classList.remove(‘active’));
+if(tab) tab.classList.add(‘active’);
+document.getElementById(‘saveBar’).style.display=id===‘treino’?‘flex’:‘none’;
 }
 
 // ══════════════════════════════════════════════════════
 // TOAST
 // ══════════════════════════════════════════════════════
 function showToast(msg,warn=false){
-  const t=document.getElementById('toast');
-  t.textContent=msg;t.className='toast'+(warn?' warn':'');
-  t.classList.add('show');
-  setTimeout(()=>t.classList.remove('show'),2500);
+const t=document.getElementById(‘toast’);
+t.textContent=msg;t.className=‘toast’+(warn?’ warn’:’’);
+t.classList.add(‘show’);
+setTimeout(()=>t.classList.remove(‘show’),2500);
 }
 
 // ══════════════════════════════════════════════════════
@@ -1009,8 +1069,9 @@ renderWeekBar();
 renderDayNav();
 renderDay();
 renderDiet();
-document.getElementById('todayDate').textContent=today();
-document.getElementById('saveBar').style.display='flex';
+document.getElementById(‘todayDate’).textContent=today();
+document.getElementById(‘saveBar’).style.display=‘flex’;
 </script>
+
 </body>
 </html>
